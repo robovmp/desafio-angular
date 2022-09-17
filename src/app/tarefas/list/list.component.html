@@ -1,0 +1,12 @@
+<div class="content">
+  <mat-card class="content-card" *ngFor="let tarefa of tarefas | async">
+      <mat-card-title>{{tarefa.titulo}}</mat-card-title>
+      <mat-card-content class="content-card-anot">
+        <p> {{tarefa.anotacao}} </p>
+      </mat-card-content>
+      <mat-card-actions class="content-card-btn">
+        <button mat-raised-button color="primary" (click)="openDialog(tarefa, tarefa.key)">Editar</button>
+        <button mat-raised-button color="warn" (click)="delete(tarefa.key)">Excluir</button>
+      </mat-card-actions>
+  </mat-card>
+</div>

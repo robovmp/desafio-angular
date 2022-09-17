@@ -1,0 +1,17 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    &-card{
+        width: 400px;
+        margin: 10px;
+        
+        &-anot {
+            max-height: 150px;
+            overflow: hidden;
+        }
+    }
+}
+
