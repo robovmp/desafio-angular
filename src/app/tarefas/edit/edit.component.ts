@@ -33,6 +33,9 @@ export class EditComponent implements OnInit {
   }
 
   update() {
+    if( this.tarefa.anotacao == '' ){
+      return alert( 'Não é possível salvar sem anotação!' )
+    }
     this.tarefaService.update( this.tarefa, this.key  )
     this.dialog.closeAll();
   }

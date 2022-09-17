@@ -24,8 +24,11 @@ export class ListComponent implements OnInit {
 
   openDialog(tarefa: Tarefa, key: string) {
     this.dialog.open(EditComponent, {
-      height: '90%',
-      width: '90%'
+      height:'650px',
+      maxHeight: '100%',
+      width: '950px',
+      maxWidth:'100%'
+      
     
     });
 
