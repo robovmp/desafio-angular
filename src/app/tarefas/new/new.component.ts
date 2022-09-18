@@ -27,8 +27,12 @@ export class NewComponent implements OnInit {
 
   onSubmit() {
 
-    if( this.tarefa.anotacao == '' ){
-      return alert( 'Adicionar anotação' )
+    if( this.tarefa.titulo == '' ) {
+      return alert( 'Por favor, adicionar título a tarefa!' )
+    }
+
+    if( this.tarefa.anotacao == '' ) {
+      return alert( 'Por favor, adicionar corpo de texto a anotação!' )
     }
 
     this.tarefaService.insert( this.tarefa )

@@ -1,4 +1,4 @@
 export class Tarefa {
-    titulo: string = 'Titulo';
+    titulo: string = 'Título';
     anotacao: string = '';
 }
